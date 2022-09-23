@@ -1,0 +1,54 @@
+#qna {
+    display: none;
+}
+
+.qBox {
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 24px;
+    width: 80%;
+}
+
+.audioBox {
+    text-align: center;
+}
+
+
+.audio {
+    background-color: skyblue;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 28px;
+    width: 40%;
+}
+
+.answerList {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    display: block;
+    width: 80%;
+    border: 0px;
+    font-size: 20px;
+}
+
+.answerList:hover,
+.answerList:focus {
+    background-color: rgb(17, 73, 162);
+    color: whitesmoke;
+}
+
+.status {
+    height: 20px;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.statusBar {
+    height: 100%;
+    border-radius: 20px;
+    background-color: pink;
+    ;
+
+}
