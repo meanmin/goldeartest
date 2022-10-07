@@ -13,18 +13,29 @@
     border-radius: 20px;
 }
 
-.resultName {
-    font-size: 32px;
+.resultname {
+    font-size: 2rem;
 }
 
 .resultDesc {
-    font-size: 24px;
+    font-size: 1.25rem;
 }
 
 .kakao {
     color: white;
-    background-color: #fee500;
-    font-size: 20px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,9827ff+0,4b7eff+50,2989d8+100,00d7ff+100 */
+    background: #1e5799;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#00d7ff', GradientType=1);
+    /* IE6-9 */
+    ;
+    font-size: 1.25rem;
     border: 0px;
     border-radius: 20px;
 }
@@ -32,13 +43,60 @@
 .kakao:hover,
 .kakao:focus {
     background-color: whitesmoke;
-    color: #fee500;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,9827ff+0,4b7eff+50,2989d8+100,00d7ff+100 */
+    background: #1e5799;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#00d7ff', GradientType=1);
+    /* IE6-9 */
+    ;
+}
+
+.official {
+    color: white;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,9827ff+0,4b7eff+50,2989d8+100,00d7ff+100 */
+    background: #1e5799;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#00d7ff', GradientType=1);
+    /* IE6-9 */
+    ;
+    font-size: 1.25rem;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.official:hover,
+.official:focus {
+    background-color: whitesmoke;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,9827ff+0,4b7eff+50,2989d8+100,00d7ff+100 */
+    background: #1e5799;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#00d7ff', GradientType=1);
+    /* IE6-9 */
+    ;
 }
 
 .goHome {
     color: white;
     background-color: pink;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: 0px;
     border-radius: 20px;
 }

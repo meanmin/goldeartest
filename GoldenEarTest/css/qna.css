@@ -3,10 +3,11 @@
 }
 
 .qBox {
-    background-color: whitesmoke;
+    background-color: rgb(138, 154, 238);
+    color: white;
     text-align: center;
     border-radius: 20px;
-    font-size: 24px;
+    font-size: 1.5rem;
     width: 80%;
 }
 
@@ -14,28 +15,28 @@
     text-align: center;
 }
 
-
 .audio {
-    background-color: skyblue;
+    background-color: rgb(250, 250, 250);
     text-align: center;
     border-radius: 20px;
-    font-size: 28px;
-    width: 40%;
+    font-size: 1.75rem;
+    width: auto;
 }
 
 .answerList {
-    background-color: whitesmoke;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid black;
     border-radius: 20px;
     display: block;
     width: 80%;
     border: 0px;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .answerList:hover,
 .answerList:focus {
-    background-color: rgb(17, 73, 162);
-    color: whitesmoke;
+    background-color: rgb(138, 154, 238);
+    color: rgb(241, 242, 249);
 }
 
 .status {
@@ -48,7 +49,19 @@
 .statusBar {
     height: 100%;
     border-radius: 20px;
-    background-color: pink;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,9827ff+0,4b7eff+50,2989d8+100,00d7ff+100 */
+    background: #1e5799;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #1e5799 0%, #9827ff 0%, #4b7eff 50%, #2989d8 100%, #00d7ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#00d7ff', GradientType=1);
+    /* IE6-9 */
+
     ;
 
 }

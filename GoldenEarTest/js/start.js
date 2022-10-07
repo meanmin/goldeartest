@@ -3,8 +3,28 @@ const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
 
 const endPoint = 10;
+let currentQuestion = 0
+let score = 0
 
 //calculation 하는 거 여기 넣어줘야함!!
+
+function calResult() {
+    if (score == 10) {
+        return 0;
+    }
+    else if (7 < score && score <= 9) {
+        return 1;
+    }
+    else if (4 < score && score <= 7) {
+        return 2;
+    }
+    else if (1 < score && score <= 4) {
+        return 3;
+    }
+    else {
+        return 4;
+    }
+}
 
 
 function setResult() {
@@ -14,7 +34,7 @@ function setResult() {
 
     var resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
-    var imgURL = 'img/image-' + point + '.png';
+    var imgURL = 'img/image-' + point + '.jpeg';
     resultImg.src = imgURL;
     resultImg.alt = point;
     resultImg.classList.add('img-fluid');
@@ -63,25 +83,43 @@ function addAnswer(answerText, qIdx, idx) {
         setTimeout(() => {
             var target = qnaList[qIdx].a[idx];
             for (let i = 0; i < target.length; i++) {
+                console.log("select")
+                console.log(select)
                 select[target[i]] += 1;
             }
 
             for (let i = 0; i < children.length; i++) {
                 children[i].style.display = 'none';
             }
+
+            if (target.correct) {
+                score++
+            }
+            console.log(score)
             goNext(++qIdx)
         }, 450)
     }, false);
 
     var playAudio = document.querySelector('.audio');
+    var audio = new Audio("sound/" + qnaList[qIdx].audio);
+
 
     playAudio.addEventListener("click", function () {
-        var audio = new Audio("sound/audio-1.mp3");
+        //        var audio = new Audio("sound/" + qnaList[qIdx].audio);
         audio.loop = false;
         audio.volume = 0.5;
+        audio.load();
         audio.play();
+    }
+    )
+
+    playAudio.addEventListener('ended', function () {
+        audio.pause();
     })
+
 }
+
+
 
 
 /*
@@ -98,6 +136,7 @@ function goNext(qIdx) {
         goResult();
         return;
     }
+    currentQuestion = qIdx
     var q = document.querySelector('.qBox');
     q.innerHTML = qnaList[qIdx].q;
     for (let i in qnaList[qIdx].a) {
@@ -120,5 +159,4 @@ function begin() {
         let qIdx = 0;
         goNext(qIdx);
     }, 450);
-
 }

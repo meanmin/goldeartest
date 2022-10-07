@@ -1,7 +1,8 @@
 body {
-    background-color: #EdF0F3;
+    background-image: url("../img/star.png");
+    background-size: cover;
 }
 
 * {
-    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'GangwonEdu_OTFBoldA';
 }

@@ -1,5 +1,4 @@
 #main {
-    background-color: whitesmoke;
     width: 80%;
     text-align: center;
     border-radius: 20px;
@@ -10,25 +9,46 @@
     text-align: center;
 }
 
-.navigation {
-    background-color: whitesmoke;
-    width: 100%;
-    text-align: center;
+.howtoplay {
+    background-color: white;
+    border-radius: 20px;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: rgb(138, 154, 238);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 1.19rem;
 }
 
 .contain {
-    height: 40px;
+    height: 20px;
     width: auto;
     margin-top: 15px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .btn {
-    width: 80%;
+    width: 50%;
     height: 50px;
-    font-size: 28px;
+    font-size: 1.75rem;
+    border-radius: 100px;
+    background-color: rgb(138, 154, 238);
+    color: rgb(241, 242, 249);
 }
 
-p {
-    font-size: 20px;
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }

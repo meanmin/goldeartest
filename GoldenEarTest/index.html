@@ -5,7 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cochl">
+    <meta name="keyword" content="황금 귀 테스트">
+    <meta name="description" content="황금 귀 테스트">
 
+    <!-- sns share -->
+    <meta property="og:url" content="https://goldenear.netlify.app" />
+    <meta property="og:title" content="황금 귀 테스트" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/share.jpeg" />
+    <meta property="og:description" content="내 장점이 뭐야? 바로 잘 듣는 거야" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="400" />
     <!-- 파비콘-->
     <link rel="shortcut icon" href="img/fav.png">
     <link rel="apple-touch-icon-precomposed" href="img/fav.png">
@@ -25,7 +36,7 @@
     <!-- 카카오 연결해볼게 -->
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
-        Kakao.init('036ba04491ad93982411a3055a538ecf');
+        Kakao.init('8a9bb0059f2cba833b4f452fd4051a55');
         Kakao.isInitialized();
     </script>
 
@@ -33,46 +44,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <script>
+        Kakao.init('8a9bb0059f2cba833b4f452fd4051a55');
+        Kakao.isInitialized();
+    </script>
 </head>
 
 <body>
-    <div class="navigation col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
-        <img class="contain" src="img/logo.png">
+    <div style="text-align:center">
+        <a href="https://cochl.ai">
+            <img class="contain" src="img/logo.png"></a>
     </div>
 
     <div class="container">
         <section id="main" class="mx-auto my-5 px-3 py-5">
-            <h1>황금 귀 테스트</h1>
+            <h1> <span
+                    style="font-family: 'PyeongChangPeace-Bold'!important; font-size: 2.2rem; border-top: 2px solid rgb(138, 154, 238); border-bottom: 2px solid rgb(138, 154, 238) ;">~황금
+                    귀 테스트~</span>
+            </h1>
             <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto my-5">
                 <img src="./img/ear.png" class="img-fluid" alt="mainImage">
             </div>
 
-            <span>
-                <p>
-                    &#9675; 세상에 관심이 많은 당신! 얼마나 많은 소리를 알고 있나요?<br>
-                    &#9675; 총 10가지 문제를 통해 당신의 능력을 시험해보세요! <br>
-                    &#9675; 재생되는 소리를 듣고 문제를 맞춰주시면 됩니다. <br>
-                    &#9675; 재미있게 즐겨주세요!
-                </p>
-            </span>
-            <button type="button" class="btn btn-danger mt-3" onclick="js:begin()">시작하기</button>
+            <div class="howtoplay">
+                &#128153; 세상에 관심이 많은 당신! <br> 얼마나 많은 소리를 알고 있나요?<br>
+                &#128153; 총 10가지 문제를 통해 당신의 능력을 시험해보세요! <br>
+                &#128153; 재생되는 소리를 듣고 문제를 맞춰주시면 됩니다. <br>
+                &#128153; 재미있게 즐겨주세요!
+            </div>
+            <button type="button" class="btn mt-5" onclick="js:begin()">시작하기</button>
         </section>
 
         <!--문제 출제-->
 
         <section id="qna">
-            <div class="status mx-auto mt-5">
+            <div class="status mx-auto my-5">
                 <div class="statusBar">
 
                 </div>
             </div>
 
-            <div class="qBox my-5 py-3 mx-auto">
+            <div class="qBox my-3 py-3 mx-auto">
 
             </div>
-
-            <div class="audioBox my-5 py-3 mx-auto">
-                <button type="button" class="audio mt-3 py-2 px-3">Play!</button>
+            <div class="audioBox my-3 py-3 mx-auto">
+                <button type="button" class="audio mt-3 py-2 px-3">&#127911;</button>
             </div>
 
             <div class="answerBox">
@@ -83,22 +99,28 @@
         <!--결과 출제-->
 
         <section id="result" class="mx-auto my-5 py-5 px-3">
-            <h1>당신의 결과는?!</h1>
-            <div class="resultname">
+            <h2>당신의 결과는?!</h2>
+            <br>
+            👇👇👇👇
+            <br>
+            <div class="resultname my-3">
 
             </div>
 
-            <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+            <div id="resultImg" class="my-5 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
 
             </div>
 
-            <div class="resultDesc">
+            <div class="resultDesc my-3">
 
             </div>
             <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
+            <button type="button" class="official mt-3 py-2 px-3"
+                onclick="window.open('https://forms.gle/jrzQkcKau23XhPHaA')">Coffee Chat</button>
         </section>
         <script src="./js/data.js" charset="utf-8"></script>
         <script src="./js/start.js" charset="utf-8"></script>
+        <script src="./js/share.js" charset="utf-8"></script>
     </div>
 </body>
 
