@@ -1,13 +1,25 @@
 #result {
     display: none;
-    background-color: whitesmoke;
+    background-color: white;
     width: 80%;
     text-align: center;
     border-radius: 20px;
+    border-style: dotted;
+    border-width: 3px;
+}
+
+#upper {
+    display: none;
+    background-color: blue;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    border-style: dotted;
+    border-width: 3px;
 }
 
 #shareResult {
-    background-color: whitesmoke;
+    background-color: white;
     width: 80%;
     text-align: center;
     border-radius: 20px;

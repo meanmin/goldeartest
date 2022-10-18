@@ -48,7 +48,7 @@ const qnaList = [
     },
 
     {
-        q: '5. 이 소리는 어디서 들을 수 있을까요?',
+        q: '5. 이 소리가 들리는 장소는?',
         a: [
             { answer: '식당', correct: true },
             { answer: '은행', correct: false },

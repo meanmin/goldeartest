@@ -99,16 +99,18 @@ function addAnswer(answerText, qIdx, idx) {
             goNext(++qIdx)
         }, 450)
     }, false);
+}
+
+
+function createAudioButton() {
 
     var playAudio = document.querySelector('.audio');
-    var audio = new Audio("sound/" + qnaList[qIdx].audio);
-
 
     playAudio.addEventListener("click", function () {
-        //        var audio = new Audio("sound/" + qnaList[qIdx].audio);
+        var audio = new Audio("sound/" + qnaList[currentQuestion].audio);
+        audio.load();
         audio.loop = false;
         audio.volume = 0.5;
-        audio.load();
         audio.play();
     }
     )
@@ -119,17 +121,6 @@ function addAnswer(answerText, qIdx, idx) {
 
 }
 
-
-
-
-/*
-document.querySelector(".audio").addEventListener("click", function () {
-    var audio = new Audio("sound/audio-1.mp3");
-    audio.loop = false;
-    audio.volume = 0.5;
-    audio.play();
-});
-*/
 
 function goNext(qIdx) {
     if (qIdx === endPoint) {
@@ -145,6 +136,8 @@ function goNext(qIdx) {
     var status = document.querySelector('.statusBar');
     status.style.width = (100 / endPoint) * (qIdx + 1) + '%';
 }
+
+createAudioButton();
 
 function begin() {
     main.style.WebkitAnimation = "fadeOut 1s";
